@@ -1,0 +1,48 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.box {
+    display: grid;
+}
+
+.conteiner-grid {
+    grid-template-columns: 72px auto auto auto auto;
+	grid-template-rows: 56px 65px 400px 400px;
+    grid-template-areas: 
+          "sidebar logo searchbar searchbar icons-right" 
+          "sidebar buttons buttons buttons buttons" 
+          "sidebar content content content content"
+          ". content content content content";
+}
+
+.sidebar {
+    grid-area: sidebar;
+}
+
+.logo {
+    grid-area: logo;
+}
+
+.searchbar {
+    grid-area: searchbar;
+}
+
+.icons-right {
+    grid-area: icons-right;
+}
+
+.buttons {
+    grid-area: buttons;
+}
+
+.content {
+    grid-area: content;
+}
+
+.item {
+    background-color: #FFA500;
+    color: #000000;
+    border: solid 1px #000000;
+    text-align: center;
+}
